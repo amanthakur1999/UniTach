@@ -1,0 +1,91 @@
+@media screen and (max-width:768px){
+    html{
+        font-size:12px;
+    }
+    .container{
+        max-width: 720px;
+        padding: 0 2rem;
+    }
+    .sm-column{
+        flex-direction: column;
+    }
+    .flex-30 , .flex-48{
+    flex: 0 1 100%;
+    }
+
+    .flex{
+        display: inline-block;
+    }
+    .nav{
+        display: none;
+        position:fixed;
+        left: 0;
+        top: 0;
+        bottom:0;
+        right:0;
+        height: 100vh;
+        background-color: rgba(228, 225, 225, 0.9);
+        z-index: 999;
+        padding-top: 9rem;
+        padding-left: -9rem;
+        text-align: center;
+    }
+    .nav-item li{
+        margin:4rem 0;
+    }
+    
+    .bars{
+        position:absolute;
+        z-index: 9999;
+        top:6.8rem;
+        right:3rem;
+    }
+    .nav-bars{
+        background-color:white !important;
+        position: fixed;
+        z-index: 99999;
+        width:100%;
+        height: 7rem;
+        
+    }
+    .fa-bars{
+        display:inline-block;
+    }
+    #toggle{
+        display: none;
+    }
+    #toggle:checked ~ .nav{
+        display: inline-block;
+    }
+
+.team-about {
+    margin-bottom:2rem;
+}
+.request-section{
+    text-align: center;
+    p{font-weight: 100;
+    }
+    a{
+        margin-top: 1rem;
+    }
+}
+.clients-img{
+    img{
+        width: 11%;
+    }
+}
+.flex-col{
+    display: -webkit-box;
+    justify-content: center;
+}
+.brand{
+    position: absolute;
+    top: 6.5rem;
+}
+.banner-img{
+height: 50vh;
+}
+.hero h2{
+    font-size: 3.8rem;
+}
+}

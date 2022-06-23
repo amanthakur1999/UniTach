@@ -1,0 +1,502 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Archivo', sans-serif;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.active {
+  background-color: #EB6061;
+  padding: 2.14rem 1rem;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 6rem;
+}
+
+.btn-parimary {
+  padding: .4rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid #DC3C45;
+  display: inline-block;
+  color: #DC3C45;
+  font-weight: 100;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-30 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 32%;
+          flex: 0 1 32%;
+}
+
+.flex-48 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 48%;
+          flex: 0 1 48%;
+}
+
+.flex-22 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 22%;
+          flex: 0 1 22%;
+}
+
+.align-item-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sub-header {
+  background-color: #dc3c45;
+  padding: 0.8rem 0;
+}
+
+.sub-header li {
+  margin-left: 0.8rem;
+}
+
+.sub-header a {
+  color: white;
+}
+
+#toggle {
+  display: none;
+}
+
+.fa-bars {
+  display: none;
+}
+
+.main-header {
+  background-color: #f2f2f2;
+  padding: 1.3rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-header li {
+  margin-left: 0.8rem;
+}
+
+.main-header li a {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.main-header li a:hover {
+  background-color: #EB6061;
+  padding: 2.1rem 1rem;
+  color: white;
+}
+
+.main-header h1 {
+  color: black;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.main-header h1 span {
+  color: red;
+  margin-right: 0.5rem;
+}
+
+.banner-img {
+  background: url(../media/banner-1.jpg) 50% 50%, no-repeat;
+  background-size: cover;
+  height: 75vh;
+}
+
+.hero {
+  padding: 17% 0;
+  width: 60%;
+}
+
+.hero h2 {
+  font-size: 3.8rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+  padding-bottom: 0.9rem;
+}
+
+.hero a {
+  background-color: #dc3c45;
+  color: white;
+}
+
+.service {
+  text-align: center;
+  padding: 6rem 0;
+}
+
+.service h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.service p {
+  font-size: 1.3rem;
+}
+
+.service-boxs {
+  margin-top: 5rem;
+  padding: 2.3rem 1rem;
+  border: 1px solid #d6d6d6;
+  border-radius: .7rem;
+}
+
+.service-boxs img {
+  width: 30%;
+}
+
+.service-boxs h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.service-boxs p {
+  font-size: 1rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+.about-solutions {
+  padding: 5rem 0;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.about-solutions h2 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  padding-bottom: 1.6rem;
+}
+
+.about-solutions p {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  color: #777777;
+  padding-bottom: 1.3rem;
+  font-weight: 200;
+}
+
+.team-about {
+  text-align: center;
+}
+
+.team-about img {
+  width: 20%;
+}
+
+.team-about h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 1rem 0;
+}
+
+.team-about p {
+  font-size: 1rem;
+  font-weight: 100;
+  color: #888888;
+  padding-bottom: 1rem;
+}
+
+.team-img img {
+  width: 100%;
+}
+
+.team-section {
+  padding: 6rem 0;
+}
+
+.request-section {
+  background-color: #DC3C45;
+  padding: 3rem 0;
+  color: white;
+}
+
+.request-section h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.request-section a {
+  padding: .4rem 1.8rem;
+  color: white;
+  border: 1px solid white;
+}
+
+.leader-con {
+  padding-top: 13%;
+}
+
+.leader-con h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  padding-right: 5rem;
+  padding-top: 3rem;
+}
+
+.leader-con p {
+  font-weight: 200;
+  padding-right: 3rem;
+  color: #777777;
+}
+
+.woman-img img {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.client-section {
+  padding: 5rem 0;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.client-section h2 {
+  font-size: 2.6rem;
+  font-weight: 900;
+  padding-bottom: 4rem;
+}
+
+.clients-img img {
+  width: 13%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.clients-img img:hover {
+  -webkit-filter: grayscale(10%);
+          filter: grayscale(10%);
+}
+
+footer {
+  padding: 4rem 0;
+  background-color: #343A40;
+  color: white;
+}
+
+footer a {
+  color: #dadada;
+  font-weight: 100;
+}
+
+footer h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+
+.copy-right {
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.copy-right h4 {
+  font-weight: 100;
+  font-size: .8rem;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    max-width: 720px;
+    padding: 0 2rem;
+  }
+  .sm-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flex-30, .flex-48 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+  .flex {
+    display: inline-block;
+  }
+  .nav {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    background-color: rgba(228, 225, 225, 0.9);
+    z-index: 999;
+    padding-top: 9rem;
+    padding-left: -9rem;
+    text-align: center;
+  }
+  .nav-item li {
+    margin: 4rem 0;
+  }
+  .bars {
+    position: absolute;
+    z-index: 9999;
+    top: 6.8rem;
+    right: 3rem;
+  }
+  .nav-bars {
+    background-color: white !important;
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    height: 7rem;
+  }
+  .fa-bars {
+    display: inline-block;
+  }
+  #toggle {
+    display: none;
+  }
+  #toggle:checked ~ .nav {
+    display: inline-block;
+  }
+  .team-about {
+    margin-bottom: 2rem;
+  }
+  .request-section {
+    text-align: center;
+  }
+  .request-section p {
+    font-weight: 100;
+  }
+  .request-section a {
+    margin-top: 1rem;
+  }
+  .clients-img img {
+    width: 11%;
+  }
+  .flex-col {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .brand {
+    position: absolute;
+    top: 6.5rem;
+  }
+  .banner-img {
+    height: 50vh;
+  }
+  .hero h2 {
+    font-size: 3.8rem;
+  }
+}
+
+.about {
+  background-color: #DC3C45;
+  padding: 3rem;
+  color: white;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.about p {
+  font-weight: 100;
+}
+/*# sourceMappingURL=style.css.map */
